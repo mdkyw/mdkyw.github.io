@@ -1,2 +1,0 @@
-# mdkyw.github.io
-TRY
