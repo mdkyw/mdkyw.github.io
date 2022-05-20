@@ -1,10 +1,113 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>你好，GitHub</title>
+    <title>Website name</title>
+    <meta name="description" content="This is the description" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="image/web_icon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <h1>覺得厲害</h1>
+    <h1>Heading</h1>
+    <!--Text-->
+    <h2>Text</h2>
+    <p>This is just some normal text.</p>
+    <p>This is just some <i>italic text</i>.</p>
+    <p>This is just some <strong>bold text</strong>.</p>
+    <p>This is just some <mark>marked text</mark>.</p>
+    <p>This is just some <del>crossed-out text</del>.</p>
+    <!--Link-->
+    <h2>Links</h2>
+    <a target="_blank" href="https://www.youtube.com/watch?v=vQWlgd7hV4A"
+      >Here is the link for the beginner's tutorial.</a
+    >
+    <br />
+    <a target="_blank" href="https://www.youtube.com/watch?v=mU6anWqZJcc"
+      >Here is the link for 11hr full tutorial</a
+    >
+    <br />
+    <!--click on the image will go to the link-->
+    <a
+      target="_blank"
+      href="https://www.youtube.com/channel/UC9QCeLD8xsSwi1oEgjn5zRg"
+    >
+      <img width="100" height="100" src="image/icon_youtube.png" />
+    </a>
+    <!--Embed image and video-->
+    <h2>Image and Video</h2>
+    <img width="300" height="200" src="image/pic.jpg" />
+    <br />
+    <video controls width="300" height="200">
+      <source src="image/video.mp4" type="video/mp4" />
+    </video>
+    <!--Form-->
+    <h2>Form</h2>
+    <form action="contact.html">
+      <label for="username">Username:</label>
+      <input
+        required
+        maxlength="10"
+        minlength="3"
+        name="username"
+        type="text"
+        id="username"
+        placeholder="Characters should be 3~10"
+      />
+      <label for="email">Email:</label>
+      <input required name="email" type="email" id="email" autocomplete="off" />
+      <select name="subject" id="subject">
+        <option value=""></option>
+        <option value="GYN">gynecology</option>
+        <option value="OBS">obstetrics</option>
+      </select>
+      <textarea
+        required
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <label>選擇顏色：</label>
+      <label><input type="radio" name="color" value="blue" />藍色</label>
+      <label><input type="radio" name="color" value="yellow" />黃色</label>
+      <label><input type="radio" name="color" value="red" />紅色</label>
+      <label><input type="radio" name="color" value="green" />綠色</label>
+      <button type="submit">Submit</button>
+    </form>
+    <!--List-->
+    <h2>List</h2>
+    <ol>
+      <li>1st item</li>
+      <li>2nd item</li>
+      <li>Pages</li>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./Index.html">Here</a></li>
+        <li><a href="./About.html">About</a></li>
+      </ul>
+    </ol>
+    <!--tTble-->
+    <h2>Table</h2>
+    <!--tr: table row, th: table head-->
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>KY</td>
+        <td>Wang</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>JS</td>
+        <td>Chang</td>
+        <td>23</td>
+      </tr>
+    </table>
+    <!--In CSS, you can select and style specific class and id, similar elements can have same class, but elements cannot have same id-->
+    <!--Can have 2+ classes on same elements, so the name of classes cannot have space-->
   </body>
 </html>
